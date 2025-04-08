@@ -1,0 +1,33 @@
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: none;
+    background-color: bisque;
+}
+*{
+    margin:0;
+    padding:0;
+}
+li{
+    color:aliceblue;
+}
+.box{
+    height: 120px;
+    color:aliceblue;
+    
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);;
+    border:5px dashed blue;
+    Display:flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+}
+
+h1{
+    color:aliceblue;
+    text-decoration: none;
+}
+ 

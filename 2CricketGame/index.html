@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRICKET GAME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading"> Bat Ball Stump Game </h1>
+        <div class="im">
+         <button  onclick="
+         const yourChoice='Bat';
+         console.log(yourChoice);
+          let randomNumber= Math.random() * 3;
+          console.log(randomNumber);
+          let computerChoice;
+          if(randomNumber >0 && randomNumber <1){
+            computerChoice='bat';
+          }else if(randomNumber >1 && randomNumber <2){
+            computerChoice='ball';
+          }else {
+            computerChoice='Stump';
+          }
+         let choice=` ${computerChoice}`;
+
+
+         let resultMsg;
+         if(computerChoice=== 'bat'){
+            resultMsg='It is a tie.';
+            score.tie++;
+         }else if (computerChoice ==='Stump'){
+            resultMsg='computer won';
+            score.lost++;
+         }else if(computerChoice === 'ball'){
+            resultMsg = 'User won';
+            score.win++;
+         }
+         console.log(score);
+         localStorage.setItem('score',JSON.stringify(score));
+         alert(` your choice is =${yourChoice},  ${choice}, final result is = ${resultMsg} 
+           ${score.displayScore()}` );
+         text1(yourChoice,choice,resultMsg);
+         
+         "><img src="images/bat.png" alt="bat" class="image"> </button>
+         
+
+
+         <button onclick="  
+           const youChoice='Ball';   
+           let randomNumbers=Math.random() * 3;
+          console.log(randomNumbers);
+          let computerchoices;
+          if(randomNumbers>0 && randomNumbers<1){
+            computerChoices='bat';
+          }else if(randomNumber>1 && randomNumbers<2){
+            computerChoices='ball';
+          }else{
+            computerChoices='stump';
+          }
+
+          let resultMg;
+         if(computerChoices==='bat'){
+            resultMg='computer won';
+            score.lost++;
+         }else if(computerChoices==='ball'){
+            resultMg='it is a tie';
+            score.tie++;
+          
+         }else if(computerChoices==='stump'){
+          resultMg='you won';
+          score.win++;
+         }
+           console.log(score);
+           localStorage.setItem('score',JSON.stringify(score));
+          alert(` your choice is = ${youChoice} , computer choice is =${computerChoices} ,final result is =${resultMg},
+        
+          won:${score.win},
+          lost:${score.lost},
+          tie:${score.tie}`);
+          text1(youChoice,computerChoices,resultMg);
+        
+        "><img src="images/ball.png" alt="ball" class="image"></button>
+
+
+         <button   onclick="  
+         const you='stump';   
+         let randomNum=Math.random() * 3;
+        console.log(randomNum);
+        let compChoice;
+        if(randomNum>0 && randomNum<1){
+          compChoice='bat';
+        }else if(randomNum>1 && randomNum<2){
+          compChoice='ball';
+        }else{
+          compChoice='stump';
+        }
+
+        let result;
+       if(compChoice==='bat'){
+          result='you won';
+          score.win++;
+       }else if(compChoice==='ball'){
+          result='computer won';
+          score.lost++;
+        
+       }else if(compChoice==='stump'){
+        result='it is a tie';
+        score.tie++;
+       }
+        console.log(score); 
+        localStorage.setItem('score',JSON.stringify(score));
+       alert(` your choice is = ${you} , computer choice is =${compChoice} ,final result is =${result} 
+        
+          won:${score.win},
+          lost:${score.lost},
+          tie:${score.tie}`);
+          text1(you,compChoice,result);
+      
+      
+      
+      " ><img src="images/stump.png" alt="stump" class="image"></button>
+      </div>
+         
+     <div class="box">
+      
+         <h2 id="computer-move"></h2>
+         <h2 id="user-move"></h2>
+         <h2 id="result"></h2>
+         <h2 id="score"></h2>
+         
+         </div>
+         <button class="reset" onclick="localStorage.clear()
+         resetScore();
+         ">RESET</button>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

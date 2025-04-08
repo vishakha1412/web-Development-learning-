@@ -1,0 +1,446 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Inter',sans-serif;
+}
+body{
+    height: 900px;
+    width:100vw;
+    background-color: aliceblue;
+    text-decoration: none;
+    padding: 2rem;
+}
+.header-content{
+    display:flex;
+    justify-content: space-between;
+    margin:0 auto;
+    max-width: 1000px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+}
+#happy{
+    color:yellow;
+}
+.logo-text{
+    font-size: 2rem;
+    color:black;
+    font-weight: bold;
+}
+.nav-item{
+    
+    color:black;
+    gap:1.5rem;
+    padding:1rem;
+    font-size: bold;
+    transform:color  0.5s;
+}
+.nav{
+    display:none;
+}
+@media screen and (min-width:780px){
+    .nav{
+        display:flex;
+    }
+}
+.nav-item:hover{
+    color:rgb(15, 15, 223);
+}
+.contact-button{
+    background-color: blue;
+    color: white;
+    padding:1rem ;
+    border-radius: 40px;
+    font-size: 1.5rem;
+    font-weight:bold;
+    transform:all 0.5s;
+    display:none;
+}
+@media screen and (min-width:780px){
+    .contact-button{
+        display:flex;
+    }
+}
+.contact-button:hover{
+    background-color: rgb(53, 45, 106);
+}
+.button1{
+    
+    transform:all 0.5s;
+    height: 2.5rem;
+    width:3rem;
+    color:blue;
+    padding:1rem;
+    border:none; 
+    background-color: transparent;
+    size:2rem;
+
+
+}
+@media screen and (min-width:780px){
+    .button1{
+        display :none;
+    }
+}
+.section2{
+    max-width:1000px;
+    margin:0 auto;
+     
+}
+.section2-content{
+    display:flex;
+    justify-content: space-between;
+    padding:4rem 3rem 2rem 2rem;
+}
+@media screen and(max-width:780px){
+    .section {
+        display:flex;
+        flex-direction: column;
+    }
+}
+.section2-image{
+    height:350px;
+    width:320px;
+    border-radius: 20px;
+    transform: all 0.5;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+.section2-divide1{
+    width:500;
+    padding:20px 50px 20px 20px;
+    display:flex;
+    gap:20px;
+    flex-direction: column;
+    align-content: space-between;
+    animation: all 2s;
+}
+.intro{
+    color:rgb(74, 74, 180);
+}
+.icon{
+    display:flex;
+    gap:20px;
+     
+}
+.heading{
+   font-weight: bold;
+}
+.start{
+    background-color: blue;
+    color:white;
+    padding:10px 15px 10px 15px;
+    border-radius: 5px;
+    transform: all 0.5s;
+}
+.start:hover{
+    background-color: rgb(138, 138, 218);
+    color:white;
+}
+.take{
+    background-color: red;
+    color:white;
+    padding:10px 15px 10px 15px;
+    border-radius: 5px;
+    transform:all 0.5s;
+}
+.take:hover{
+    background-color: rgb(209, 109, 109);
+}
+#start1{
+    color:white;
+}
+#take1{
+    color:white;
+}
+ 
+.trust{
+    text-align: center;
+    padding:20px;
+    font-size: 1.2rem;
+}
+.company{
+    margin:0 auto;
+    max-width: 600px;
+    display:flex;
+    flex-direction: row;
+   justify-content: space-between;
+   background-color: rgb(222, 213, 213);
+   height: 60px;
+   width:600px;
+   padding:20px;
+   align-items: center;
+   font-size: 0.8rem;
+   border-radius: 10px;
+}
+ 
+
+.text{
+    padding:20px;
+    margin:0 auto;
+    max-width: 1000px;
+    font-size:0.9rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+
+}
+.feature-text{
+    text-align: center;
+    padding:10px;
+}
+#feature-con{
+    margin:0 auto;
+    max-width: 1500px;
+}
+.feature-content{
+    margin:0 auto;
+    max-width: 750px;
+}
+.grid1{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:1.2rem;
+ }
+ .grid1-content{
+    display:flex;
+    flex-direction: column;
+    height: auto;
+    width:350px;
+    background-color: royalblue;
+    border-radius: 10px;
+    height: 200px;
+    text-align: center;
+ }
+ .grid2-content{
+    display:flex;
+    flex-direction: column;
+    height: auto;
+    width:350px;
+    background-color: rgb(196, 92, 109);
+    border-radius: 10px;
+    text-align: center;
+ } 
+ .grid3-content{
+    display:flex;
+    flex-direction: column;
+    height: auto;
+    width:350px;
+    background-color:rgb(219, 219, 82);
+    border-radius: 10px;
+    text-align: center;
+ }
+ .grid4-content{
+    display:flex;
+    flex-direction: column;
+    height: auto;
+    width:350px;
+    background-color: rgb(7, 219, 227);
+    border-radius: 10px;
+    text-align: center;
+ }
+ .grid5-content{
+    display:flex;
+    flex-direction: column;
+    height: auto;
+    width:350px;
+    background-color:rgb(7, 156, 7);
+    border-radius: 10px;
+    text-align: center;
+ } 
+ .grid6-content{
+    display:flex;
+    flex-direction: column;
+    height: auto;
+    width:350px;
+    background-color: rgb(152, 11, 239);
+    border-radius: 10px;
+    text-align: center;
+ }
+ #img2{
+    padding:15px;
+     
+}
+ 
+.feature-heading{
+    color:white;
+    padding:10px;
+    font-size: 1.2rem;
+    font-weight:bold;
+
+}
+.feature-description{
+     padding: 10px 40px 20px 40px;
+     color:white;
+}
+@media screen and(max-width:700px){
+    .grid1{
+        display: flex;
+        flex-direction: column;
+        gap:1.2rem;
+    }
+}
+.grid1-content:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+.grid2-content:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.grid3-content:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.grid4-content:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.grid5-content:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.grid6-content:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.testimonial{
+    margin:0 auto;
+    max-width: 1000px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    text-align: center;
+    padding:20px;
+}
+.testimonial-section2{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    justify-content: space-between;
+    text-align: center;
+}
+.testimonial-box1{
+    font-size: 0.8rem;
+    padding:20px;
+    height: auto;
+    width:400px;
+    border:2px solid rgba(132,129,129,0.5);
+    background-color: aliceblue;
+    box-shadow: 0px 10px 20px rgb(230, 228, 228);
+    gap:10px;
+}
+.testimonial-box2{
+    font-size: 0.8rem;
+    padding:20px;
+    height: auto;
+    width:400px;
+    border:2px solid rgba(132,129,129,0.5);
+    background-color: aliceblue;
+    box-shadow: 0px 10px 20px rgb(230, 228, 228);
+}
+.testimonial-box3{
+    font-size: 0.8rem;
+    padding:20px;
+    height: auto;
+    width:400px;
+    border:2px solid rgba(132, 129, 129,0.5);
+    background-color: aliceblue;
+    box-shadow: 0px 10px 20px rgb(230, 228, 228);
+}
+.testimonial-image{
+    border-radius: 80%;
+    margin: 10px;
+}
+.testimonial-box1:hover{
+    transform:scale(1.1);
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+.testimonial-box2:hover{
+    transform:scale(1.1);
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+.testimonial-box3:hover{
+    transform:scale(1.1);
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+.testimonial-name{
+    font-weight: bold;
+    color:rgb(32, 32, 188)
+}
+.newsletter-section{
+    background-color: rgb(206, 202, 202);
+    margin:0 auto;
+    max-width: 960px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border:2px solid rgb(154, 152, 152);
+    
+    border-radius: 20px;
+    overflow: hidden;
+    
+    
+}
+.newsletter-heading{
+    font-size:1.5rem;
+    font-weight: bold;
+    color: rgb(70, 70, 235);
+}
+.newsletter-section2{
+    display:flex;
+    flex-direction: column;
+   justify-content: center;
+    margin:20px;
+   
+}
+.newsletter-text{
+    font-size: 0.8rem;
+}
+.newsletter-image{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 100%;
+    object-fit: cover;
+}
+#terms{
+    color:rgb(58, 58, 233);
+}
+.send{
+    background-color: rgb(49, 49, 209);
+    border-radius: 10px;
+    color:white;
+    
+    padding:8px;
+}
+.footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:0 auto;
+    max-width: 1000px;
+    padding:50px;
+    font-size: 0.6rem;
+
+}
+.footer-block3{
+    display:flex;
+    flex-direction: column;
+     justify-content: center;
+}
+.footer-heading{
+    padding:20px;
+}
+.end{
+    text-align: center;
+    padding: 20px;
+    box-shadow: inset 0px 10px 40px rgb(214, 209, 209);
+}
